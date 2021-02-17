@@ -19,7 +19,7 @@ li, a {
 .nav__link-list {
     margin-top: -37px;
 }
-.block-send-email__inner h4::before{
+.block-connect__inner h4::before{
     float: left;
     margin: 10px;
     content: "";
@@ -36,7 +36,7 @@ li, a {
     font-weight: normal;
 }
 
-.header-slider__switch h4, .block-send-email__form button, .card-item h5 {
+.header-slider__switch h4, .block-connect__form button, .card-item h5 {
     font-family: Arial, serif;
     font-style: normal;
     font-weight: normal;
@@ -186,14 +186,14 @@ main {
     margin-top: -52px;
 }
 
-.block-send-email__inner {
+.block-connect__inner {
     display: flex;
     width: 876px;
     -webkit-align-items: center;
     align-items: center;
 }
 
-.block-send-email__inner h4 {
+.block-connect__inner h4 {
     font-family: Arial, serif;
     font-style: italic;
     font-weight: normal;
@@ -202,7 +202,7 @@ main {
     padding-left: 18px;
 }
 
-.block-send-email {
+.block-connect {
     margin-top: 39px;
     padding-left: 18px;
     border-bottom: 1px dashed #E5E5E5;
@@ -212,7 +212,7 @@ main {
     padding-bottom: 8px;
 }
 
-.block-send-email__form {
+.block-connect__form {
     padding-left: 21px;
     padding-top: 4px;
     display: flex;
@@ -223,12 +223,12 @@ main {
     cursor: pointer;
 }
 
-.block-send-email__form input {
+.block-connect__form input {
     width: 157px;
     height: 19px;
 }
 
-.block-send-email__form button {
+.block-connect__form button {
     margin-left: 17px;
     font-size: 10px;
     line-height: 10px;
@@ -263,7 +263,7 @@ main {
     color: #34ACA7;
 }
 
-.down-text-item-card {
+.card-item__date {
     color: #e5e5e5;
     padding-top: 11px;
 }
@@ -277,10 +277,11 @@ main {
 }
 
 footer {
-    width: 100%;
+    width: 90vw;
     margin-top: 28px;
     padding-top: 30px;
     overflow-x: hidden;
+    margin: 0 auto;
 }
 
 footer section {
@@ -288,10 +289,11 @@ footer section {
     border-top: 2px solid #E5E5E5;
     display: flex;
     justify-content: space-between;
+
 }
 
 
-.footer-info a, p {
+.footer__info a, p {
     font-family: Arial, serif;
     font-style: normal;
     font-weight: normal;
@@ -299,24 +301,24 @@ footer section {
     line-height: 12px;
 }
 
-.link-f a {
+.footer__contact a {
     color: #34ACA7;
 }
 
-.link-f a::before {
+.footer__contact a::before {
     color: #34ACA7;
     content: ' \007c';
 }
 
-.link-f a:nth-child(1):before {
+.footer__contact a:nth-child(1):before {
     content: '';
 }
 
-.footer-info p {
+.footer__info p {
     color: #e5e5e5;
 }
 
-.footer-info img {
+.footer__info img {
     margin-right: 5px;
 }
 
@@ -329,45 +331,45 @@ footer section {
     display: inline-block;
 }
 
-.tastemakers-link::before {
+.link-tastemakers::before {
     background-image: url(img/1.svg);
 }
 
-.blog-link::before {
+.link-blog::before {
     background-image: url(img/2.svg);
 }
 
-.a-list-link::before {
+.link-a-list::before {
     background-image: url(img/3.svg);
 }
 
-.contribure-link::before {
+.link-contribure::before {
     background-image: url(img/4.svg);
 }
 
-.about-link::before {
+.link-about::before {
     background-image: url(img/5.svg);
 }
 
-.link-social-network {
+.soc-network {
     display: flex
 }
 
-.link-social-network div {
+.soc-network div {
     width: 37px;
     height: 31px;
     background-repeat: no-repeat;
 }
 
-.link-social-network__item1 {
+.tweet {
     background-image: url(img/Vector1.svg);
 }
 
-.link-social-network__item2 {
+.facebook {
     background-image: url(img/Vector2.svg);
 }
 
-.link-social-network__item3 {
+.con {
     background-image: url(img/Vector3.svg);
 }
 
@@ -405,15 +407,15 @@ footer section {
         width: 712px;
     }
 
-    .block-send-email__inner {
+    .block-connect__inner {
         width: 696px;
     }
 
-    .block-send-email {
+    .block-connect {
         width: 696px;
     }
 
-    .block-send-email__form {
+    .block-connect__form {
         display: flex;
     }
 
@@ -442,6 +444,11 @@ footer section {
         padding-bottom: 17px;
     }
 
+}
+@media (min-width: 769px) {
+footer{
+    width: 1100px;
+}
 }
 
 @media (min-width: 769px) and (max-width: 991px) {
@@ -491,15 +498,15 @@ footer section {
         width: 712px;
     }
 
-    .block-send-email__inner {
+    .block-connect__inner {
         width: 696px;
     }
 
-    .block-send-email {
+    .block-connect {
         width: 696px;
     }
 
-    .block-send-email__form {
+    .block-connect__form {
         display: flex;
     }
 
@@ -586,18 +593,18 @@ footer section {
         display: none;
     }
 
-    .block-send-email__inner {
+    .block-connect__inner {
         width: 480px;
         display: flex;
         flex-wrap: wrap;
     }
 
-    .block-send-email {
+    .block-connect {
         width: 487px;
     }
 
 
-    .block-send-email__form {
+    .block-connect__form {
         display: flex;
     }
 
@@ -633,15 +640,15 @@ footer section {
         top: 202px;
         width: 600px;
     }
-    .block-send-email__inner h4 {
+    .block-connect__inner h4 {
         width: 585px;
     }
 
-    .block-send-email__form {
+    .block-connect__form {
         padding-left: 0;
     }
 
-    .block-send-email__form input {
+    .block-connect__form input {
         width: 375px;
     }
 }
@@ -654,7 +661,7 @@ footer section {
         top: 141px;
         width: 480px;
     }
-    .block-send-email__inner h4 {
+    .block-connect__inner h4 {
         width: 480px;
     }
 }
@@ -711,21 +718,21 @@ footer section {
         display: none;
     }
 
-    .block-send-email__inner {
+    .block-connect__inner {
         width: auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .block-send-email {
+    .block-connect {
         width: auto;
         padding-left: 0;
         margin-top: 72px;
 
     }
 
-    .block-send-email__form {
+    .block-connect__form {
         display: flex;
     }
 
@@ -768,27 +775,27 @@ footer section {
         max-width: 480px;
     }
 
-    .block-send-email__form {
+    .block-connect__form {
         padding-left: 0;
     }
 
 
-    .block-send-email__form input {
+    .block-connect__form input {
         width: 300px;
     }
 }
 @media (max-width: 420px) {
-    .block-send-email__form input {
+    .block-connect__form input {
         width: 250px;
     }
 }
 @media (max-width: 420px) {
-    .block-send-email__form input {
+    .block-connect__form input {
         width: 250px;
     }
 }
 @media (max-width: 358px) {
-    .block-send-email__form input {
+    .block-connect__form input {
         width: 220px;
     }
 }

@@ -14,11 +14,11 @@
         <a class="navigation-menu__logo" href="#"><img src="img/icon-logo.svg" alt="logo_icon"></a>
         <nav class="nav">
             <ul class="nav__link-list">
-                <li><a class="nav-link tastemakers-link" href="#">Tastemakers</a></li>
-                <li><a class="nav__link blog-link" href="#">Blog</a></li>
-                <li><a class="nav__link a-list-link" href="#">The A-List</a></li>
-                <li><a class="nav__link contribure-link" href="#">Contribure</a></li>
-                <li><a class="nav__link about-link" href="#">About</a></li>
+                <li><a class="nav__link link-tastemakers" href="#">Tastemakers</a></li>
+                <li><a class="nav__link link-blog" href="#">Blog</a></li>
+                <li><a class="nav__link link-a-list" href="#">The A-List</a></li>
+                <li><a class="nav__link link-contribure" href="#">Contribure</a></li>
+                <li><a class="nav__link link-about" href="#">About</a></li>
             </ul>
         </nav>
         <div class="header-communication">
@@ -65,14 +65,11 @@
                 <p>We want to hear from you!</p>
             </li>
         </ul>
-        <section class="block-send-email">
-            <div class="block-send-email__inner">
-                <!--<div class="block-send-email__icon-post"></div>-->
-
-
+        <section class="block-connect">
+            <div class="block-connect__inner">
                 <h4>Sign up for out newsletter to receive a handpicked selection of the best stories, recipes, and news,
                     delivered weekly to your inbox.</h4>
-                <form class="block-send-email__form" action="send">
+                <form class="block-connect__form" action="send">
                     <input type="text">
                     <button type="submit">Subscribe</button>
                 </form>
@@ -91,7 +88,7 @@
                 </a>
                 <p>With the best of the season coming from “orchards, farms and gardens,” NPR has put together an
                     impressive collection of 10 summer cookbooks.</p>
-                <p class="down-text-item-card">May 23, 2012 /<a href="#">Read...</a></p>
+                <span class="card-item__date">May 23, 2012 /<a href="#">Read...</a></span>
             </li>
             <li>
                 <a href="#">
@@ -100,7 +97,7 @@
                 </a>
                 <p>About a month ago, I ate almost an entire box of kale chips. My brother and I were visiting our
                     cousin in Brooklyn, and before a very thoughtfully prepared vagan...</p>
-                <p class="down-text-item-card">May 17, 2012 /<a href="#">Read...</a></p>
+                <span class="card-item__date">May 17, 2012 /<a href="#">Read...</a></span>
             </li>
             <li>
                 <a href="#">
@@ -108,7 +105,7 @@
                     <h5>Join us on Pinterest!</h5>
                 </a>
                 <p>If I could curate a cookbook for you, this would be it.</p>
-                <p class="down-text-item-card">May 23, 2012 /<a href="#">Read...</a></p>
+                <span class="card-item__date">May 23, 2012 /<a href="#">Read...</a></span>
             </li>
             <li>
                 <a href="#">
@@ -117,27 +114,27 @@
                 </a>
                 <p>I could not figure out what to do with the delectable slices of Pear Cake that I brought home from
                     this wonderful Sunday supper - eat them slowly, a little bit at...</p>
-                <p class="down-text-item-card">May 17, 2012 /<a href="#">Read...</a></p>
+                <span class="card-item__date">May 17, 2012 /<a href="#">Read...</a></span>
             </li>
         </ul>
     </section>
 </main>
-<footer>
+<footer class="footer">
     <section>
-        <div class="footer-info">
-            <div class="link-f"><a href="#">Privacy Policy </a><a href="#"> Terms of Use </a><a href="#"> Contact</a>
+        <div class="footer__info">
+            <div class="footer__contact"><a href="#">Privacy Policy </a><a href="#"> Terms of Use </a><a href="#"> Contact</a>
             </div>
             <p>2016 Food Sense, all rights reserved.</p>
         </div>
-        <div class="link-social-network">
+        <div class="soc-network">
             <a href="#">
-                <div class="link-social-network__item1"></div>
+                <div class="tweet"></div>
             </a>
             <a href="#">
-                <div class="link-social-network__item2"></div>
+                <div class="facebook"></div>
             </a>
             <a href="#">
-                <div class="link-social-network__item3"></div>
+                <div class="con"></div>
             </a>
         </div>
     </section>
