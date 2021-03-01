@@ -1,19 +1,17 @@
-let a = [1, 2, 5454, 54, 54, 2];
-let b = [5, 1, 0, 45, 5];
+
+let a = [1, 55, 5, 5, 10, 55, 1, 8, 5];
+let b = [55, 0, 1, 5, 55, 1];
 
 const arrayDiff = (a, b) => {
     let arr = [];
     for (let i = 0; i < a.length; i++) {
         for (let c = 0; c < b.length; c++) {
-            if (a[i] == b[c]) {
-                break;
-            } else {
+            if (a[i] === b[c]) { break; }
+            if (b.length - 1 == c) {
                 arr.push(a[i]);
             }
-
         }
     }
-
     return arr;
 }
 
