@@ -1,0 +1,148 @@
+.header-slider {
+  margin-top: 36px;
+  position: relative;
+  top: 9px;
+  padding-left: 24px;
+
+  @include _991 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+  }
+  @include _768 {
+    margin-top: 23px;
+  }
+  &__switch {
+    p {
+      @include _1176 {
+        display: none;
+      }
+    }
+    h4 {
+      @include _1176 {
+        padding-bottom: 17px;
+      }
+    }
+  }
+  img {
+    @include _1176 {
+      width: 800px;
+      height: 405px;
+    }
+    @include _991 {
+      width: 712px;
+      height: 364px;
+    }
+    @include _768 {
+      width: 600px;
+      height: auto;
+    }
+    @include _597 {
+      width: 480px;
+    }
+
+    @include _480 {
+      width: auto;
+      height: 400px;
+    }
+  }
+  &__content {
+    position: absolute;
+    top: 290px;
+    max-width: 897px;
+    @include _991 {
+      margin-left: -229px;
+      top: 220px;
+      max-width: 600px;
+    }
+    @include _768 {
+      top: 165px;
+      width: 371px;
+    }
+    @include _597 {
+      top: 121px;
+      width: 479px;
+      margin: 0 auto;
+    }
+    @include _480{
+      top: 334px;
+      max-width: 480px;
+    }
+    h1 {
+      flex-basis: 100px;
+      font-size: 22px;
+      line-height: 22px;
+      background-color: white;
+      padding: 18px 10px 18px 18px;
+      position: relative;
+      max-width: 300px;
+      @extend .styles-font-italic;
+      @include _768 {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+      @include _480 {
+        max-width: 480px;
+      }
+    }
+
+    h2 {
+      position: relative;
+      flex-basis: 100px;
+      font-size: 14px;
+      line-height: 14px;
+      background-color: black;
+      padding: 10px 30px 15px 18px;
+      color: white;
+      max-width: 848px;
+      @extend .styles-font-italic;
+    }
+
+    h4 {
+      @extend .styles-font-normal;
+    }
+
+
+  }
+
+  &__switch {
+    display: flex;
+    margin-top: -4px;
+    width: 896px;
+
+    @include _1176 {
+      width: 800px;
+      margin-top: -6px;
+    }
+    @include _991 {
+      width: 712px;
+    }
+    @include _768{
+      width: 601px;
+    }
+    @include _597 {
+      width: 480px;
+    }
+    @include _480 {
+      display: none;
+    }
+
+    li {
+      width: 224px;
+      background: #EFF8F7;
+      padding: 16px;
+      color: #34ACA7;
+
+      p {
+        font-size: 10px;
+        line-height: 19px;
+        @extend .styles-font-italic;
+      }
+
+      &:hover {
+        background-color: #D9EFEC;
+        cursor: pointer;
+      }
+    }
+  }
+}
