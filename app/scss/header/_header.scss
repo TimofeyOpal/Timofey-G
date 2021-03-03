@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 header {
     display: flex;
     justify-content: center;
@@ -125,4 +126,23 @@ header {
             }
         }
     }
+=======
+@import "nav.scss";
+@import "headerSlider.scss";
+header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  @include _991 {
+    flex-direction: column;
+  }
+  @include _768 {
+    display: block;
+  }
+  @include _597 {
+    display: flex;
+    flex-direction: column;
+  }
+>>>>>>> 84e8a879808ae71a76cdeb9d19843a42d749d863
 }

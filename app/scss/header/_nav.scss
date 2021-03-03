@@ -1,0 +1,184 @@
+
+.navigation-menu {
+  margin-top: 46px;
+  width: 140px;
+  @include _991 {
+    display: flex;
+    width: 712px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+  }
+  @include _768 {
+    width: 100%;
+    justify-content: space-around;
+  }
+  @include _480 {
+    width: auto;
+    flex-wrap: wrap-reverse;
+  }
+
+  div {
+    @include _991 {
+      display: none;
+    }
+  }
+}
+
+.header-communication {
+  &__tweet {
+    margin-top: 17px;
+
+    div {
+      height: 14px;
+      width: 17px;
+      background-image: url(../assets/img/Vector.svg);
+      background-repeat: no-repeat;
+    }
+
+    a {
+      display: flex;
+      border: 1px solid #E5E5E5;
+      box-sizing: border-box;
+      border-radius: 5px;
+      padding: 7px;
+      margin-top: 7px;
+    }
+
+    p {
+      font-size: 10px;
+      line-height: 12px;
+      color: #34ACA7;
+      padding-left: 4px;
+      @extend .styles-font-italic;
+    }
+
+    &__paragraph {
+      @extend .styles-font-italic;
+    }
+  }
+
+  &__inner-content {
+    font-family: Verdana, serif;
+    text-transform: uppercase;
+    border-bottom: 1px dashed #E5E5E5;
+    font-size: 12px;
+    line-height: 12px;
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 11px;
+  }
+
+  &__paragraph {
+    font-size: 10px;
+    line-height: 19px;
+    width: 140px;
+    margin-top: 13px;
+  }
+}
+.nav__link-list {
+  margin-top: -37px;
+  @include _991 {
+    display: flex;
+    width: 575px;
+    justify-content: space-between;
+  }
+  @include _768 {
+    width: 375px;
+    padding-left: 9px;
+  }
+
+  li {
+    display: flex;
+    width: 140px;
+    height: 37px;
+    margin-top: 37px;
+    @include _991 {
+      width: 75px;
+    }
+
+    a {
+      color: #34ACA7;
+      font-size: 14px;
+      line-height: 32px;
+      display: block;
+      width: 140px;
+      @extend .styles-font-italic;
+      @include _991 {
+        white-space: nowrap;
+        text-align: center;
+      }
+      @include _480 {
+
+        white-space: nowrap;
+        text-align: center;
+      }
+
+      &:before {
+        @include _991 {
+          margin: 0 auto;
+          display: block;
+        }
+        @include _768 {
+          display: none;
+        }
+      }
+
+      &.link-tastemakers {
+        &::before {
+          background-image: url(../assets/img/1.svg);
+        }
+      }
+
+      &.link-blog {
+        &::before {
+          background-image: url(../assets/img/2.svg);
+        }
+      }
+
+      &.link-a-list {
+        &::before {
+          background-image: url(../assets/img/3.svg);
+        }
+      }
+
+      &.link-contribure {
+        &::before {
+          background-image: url(../assets/img/4.svg);
+        }
+      }
+
+      &.link-about {
+        &::before {
+          background-image: url(../assets/img/5.svg);
+        }
+      }
+
+      &:hover {
+        background-color: #e9fcf9;
+        height: 37px;
+        width: 140px;
+        display: block;
+      }
+
+      &::before {
+        content: "";
+        vertical-align: middle;
+        width: 37px;
+        height: 31px;
+        background-repeat: no-repeat;
+        display: inline-block;
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .nav__link-list li a::before{
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  .nav__link-list li a::before{
+    display: none;
+  }
+}
