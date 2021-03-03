@@ -1,0 +1,8 @@
+*.js
+*.html
+*json
+*.scss
+*.css
+app/
+dist/
+!scriptES6.js
