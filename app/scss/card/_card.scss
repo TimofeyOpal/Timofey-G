@@ -1,0 +1,95 @@
+.card-item {
+    max-width: 900px;
+    margin: -42px auto;
+    padding-left: 153px;
+    @include _1176{
+        margin: -42px auto;
+    }
+    @include _1111{
+        max-width: 873px;
+    }
+    @include _1061{
+        max-width: 800px;
+    }
+    @include _991{
+        max-width: 800px;
+        padding-left: 0;
+        margin: 36px auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @include _515{
+            justify-content: center;
+        }
+        li {
+            padding: 3px;
+            a {
+                color: #34aca7;
+                h5 {
+                    @extend .font-serif;
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: #34aca7;
+                    
+                    width: 200px;
+                    @include _685{
+                        width: 265px;
+                    }
+                    @include _597{
+                        width: 220px;
+                    }
+                    @include _569{
+                        width: 200px;
+                    }
+                    @include _515{
+                        width: 260px;
+                    }
+                }
+                img {
+                    border: 1px solid #d1d4cf;
+                    @include _685{
+                        width: 250px;
+                    }
+                    @include _597{
+                        width: 220px;
+                    }
+                    @include _569{
+                        width: 200px;
+                    }
+                    @include _515{
+                        width: 260px;
+                    }
+                }
+            }
+            p {
+                @extend .font-serif;
+                max-width: 200px;           
+                font-size: 14px;
+                line-height: 20px;
+                @include _685{
+                    max-width: 250px;
+                }
+                @include _597{
+                    max-width: 220px;
+                }
+                @include _569{
+                    width: 200px;
+                }
+                @include _515{
+                    width: 260px;
+                }
+            }
+            span {
+                color: #e5e5e5;
+                padding-top: 11px;
+                a {
+                    color: #34aca7;
+                }
+            }
+        }
+    }
+}

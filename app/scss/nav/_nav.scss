@@ -1,0 +1,106 @@
+.navigation-menu {
+    max-width: 140px;
+    padding-right: 20px;
+    @include _991 {
+        max-width: 990px;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 0;
+    }
+    @include _515{
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-top: -54px;
+    }
+    a{
+        @include _515{
+            margin: 0 auto;
+        }
+    }
+}
+.nav {
+    @include _991 {
+        max-width: 773px;
+    }
+    @include _685 {
+        max-width: 418px;
+    }
+    @include _569 {
+        max-width: 366px;
+    }
+    @include _515{
+        margin: 0 auto;
+    }
+    ul {
+        margin-top: -10px;
+        justify-content: space-between;
+        @include _991 {
+            max-width: 990px;
+            display: flex;
+        }
+        @include _685{
+            max-width: 450swpx;
+        }
+        li {
+        @extend .font-italic;
+            font-size: 14px;
+            line-height: 14px;
+            margin-top: 39px;
+            @include _991{
+                width: 105px;
+            }
+            a {
+                color: #34aca7;
+                font-size: 14px;
+                line-height: 32px;
+                display: block;
+                white-space: nowrap;
+                
+                @include _991{
+                    text-align: center;
+                }
+            
+                &::before {
+                    content: "";
+                    vertical-align: middle;
+                    width: 37px;
+                    height: 31px;
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                    @include _991 {
+                        display: list-item;
+                        margin: 0 auto;
+                    }
+                    @include _515{
+                        display: none;
+                    }
+                }
+                &.link-tastemakers {
+                    &::before {
+                        background-image: url(../../assets/img/1.svg);
+                    }
+                }
+                &.link-blog {
+                    &::before {
+                        background-image: url(../../assets/img/2.svg);
+                    }
+                }
+                &.link-a-list {
+                    &::before {
+                        background-image: url(../../assets/img/3.svg);
+                    }
+                }
+                &.link-contribure {
+                    &::before {
+                        background-image: url(../../assets/img/4.svg);
+                    }
+                }
+                &.link-about {
+                    &::before {
+                        background-image: url(../../assets/img/5.svg);
+                    }
+                }
+            }
+        }
+    }
+}

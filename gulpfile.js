@@ -35,7 +35,7 @@ function browsersync(){
 function styles(){
     return src('app/scss/style.scss')
         .pipe(scss())
-        .pipe(concat('style.min.css'))
+        .pipe(concat('style.css'))
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 10 version']
         }))

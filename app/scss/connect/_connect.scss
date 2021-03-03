@@ -1,0 +1,73 @@
+.block-connect {
+    margin-top: 39px;
+    padding-left: 18px;
+    border-bottom: 1px dashed #e5e5e5;
+    border-top: 1px dashed #e5e5e5;
+    max-width: 877px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    &__inner {
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        @include _515{
+            max-width: 515px;
+            flex-wrap: wrap;
+        }
+        h4 {
+            @extend .font-italic;
+            max-width: 550px;
+            @include _515{
+                width: 400px;
+            }
+            @include _465{
+                width: 350px;
+            }
+            @include _429{
+                width: 358px;
+            }
+            @include _410{
+                width: 346px;
+            }
+        }
+    }
+    &__icon {
+        display: flex;
+        width: 35px;
+        height: 100%;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+
+        div {
+            width: 37px;
+            height: 37px;
+            background-repeat: no-repeat;
+            display: block;
+            background-image: url(../assets/img/post.svg);
+        }
+    }
+    &__form {
+
+        display: flex;
+        height: 20px;
+        input {
+            height: 19px;
+            @include _515{
+                width: 250px;
+                padding-left: 10px;
+            }
+            @include _410{
+                width: 200px;
+            }
+            
+        }
+        button {
+            margin-left: 17px;
+            font-size: 10px;
+            line-height: 10px;
+            padding: 2px 12px 12px 17px;
+            height: 22px;
+        }
+    }
+}
