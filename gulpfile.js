@@ -19,7 +19,9 @@ function build(){
         'app/fonts/**/*',
         'app/js/main.min.js',
         'app/*.html',
-        'app/img/**/*'
+        'app/assets/img/**/*'
+
+
 
     ],{base: 'app'})
         .pipe(dest('dist/'))
@@ -35,18 +37,20 @@ function browsersync(){
 function styles(){
     return src('app/scss/style.scss')
         .pipe(scss())
-        .pipe(concat('style.min.css'))
+        .pipe(concat('style.css'))
         .pipe(autoprefixer({
-            overrideBrowserslist: ['last 10 version']
+            overrideBrowserslist: ['last 10 version'],
+            cascade: false
         }))
         .pipe(dest('app/css'))
         .pipe(browserSync.stream());
 }
-function watching(){
+function watching(done){
     watch(['app/scss/**/*.scss'], styles);
-    watch(['img/**/*']);
+    watch(['assets/img/**/*']);
     watch(['app/js/main.js','!app/js/main.min.js'], scripts);
     watch('app/index.html').on('change', browserSync.reload);
+
 }
 
 exports.styles = styles;
@@ -54,4 +58,4 @@ exports.watching = watching;
 exports.browsersync = browsersync;
 exports.scripts = scripts;
 exports.build = build;
-exports.default = parallel( scripts,browsersync,watching);
+exports.default = parallel( watching,scripts,browsersync);

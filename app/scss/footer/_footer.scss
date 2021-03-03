@@ -1,0 +1,52 @@
+.footer {
+    margin-top: 58px;
+    section {
+        padding: 24px;
+        border-top: 2px solid #e5e5e5;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    &__info {
+        p {
+            @extend .font-serif;
+            font-size: 12px;
+            line-height: 12px;
+            color: #e5e5e5;
+        }
+    }
+    &__contact {
+        a {
+            @extend .font-serif;
+            font-size: 12px;
+            line-height: 12px;
+            color: #34aca7;
+            &:not(:first-child):before {
+                color: #34aca7;
+                content: " \007c";
+            }
+        }
+    }
+    &__network {
+        display: flex;
+        &__icon {
+            width: 37px;
+            height: 31px;
+            background-repeat: no-repeat;
+            display: flex;
+            &.-con {
+                background-image: url(../assets/img/Vector3.svg);
+                margin-left: -11px;
+            }
+            &.-facebook {
+                background-image: url(../assets/img/Vector2.svg);
+            }
+            &.-tweet {
+                background-image: url(../assets/img/Vector1.svg);
+            }
+        }
+    }
+}

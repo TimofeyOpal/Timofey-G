@@ -1,0 +1,128 @@
+header {
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 39px;
+    @include _991 {
+        flex-direction: column;
+    }
+    @include _515 {
+        padding-left: 0px;
+    padding-right: 0px;
+    }
+}
+
+
+.header-communication {
+    @include _991 {
+        display: none;
+    }
+    margin-top: 10px;
+    &__inner-content {
+        font-family: Verdana, serif;
+        text-transform: uppercase;
+        border-bottom: 1px dashed #e5e5e5;
+        font-size: 12px;
+        line-height: 12px;
+        font-style: normal;
+        font-weight: normal;
+        margin-top: 11px;
+    }
+    &__tweet {
+        a {
+            display: flex;
+            border: 1px solid #e5e5e5;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            border-radius: 5px;
+            padding: 7px;
+            margin-top: 7px;
+            div {
+                height: 14px;
+                width: 17px;
+                background-image: url(../assets/img/Vector.svg);
+                background-repeat: no-repeat;
+            }
+            p {
+                font-size: 10px;
+                line-height: 12px;
+                color: #34aca7;
+                padding-left: 4px;
+            }
+        }
+    }
+    &__paragraph {
+        font-size: 10px;
+        line-height: 19px;
+        width: 140px;
+        margin-top: 13px;
+    }
+}
+.header-slider {
+    img {
+        max-width: 100%;
+        position: relative;
+    }
+
+    &__content {
+        position: absolute;
+        max-width: 100%;
+        top: 300px;
+        vertical-align: middle;
+
+        h1 {
+            @extend .font-italic;
+            font-size: 22px;
+            line-height: 22px;
+            background-color: white;
+            max-width: 307px;
+            padding: 8px;
+            @include _515{
+                max-width: 100%;
+                background-color: rgba(255,255,255,.5);
+            }
+        }
+
+        h2 {
+            @extend .font-italic;
+            background-color: black;
+            color: white;
+            font-size: 14px;
+            line-height: 14px;
+            padding: 14px;
+        }
+    }
+
+    &__switch {
+        display: flex;
+        max-width: 898px;
+        align-content: stretch;
+        align-items: stretch;
+        
+        li {
+            background: #eff8f7;
+            padding: 16px;
+            color: #34aca7;
+            margin-top: -4px;
+            width: 100vw;
+            width: 100%;
+            padding: 16px;
+            cursor: pointer;
+            &:hover{
+                background: #D9EFEC;
+            }
+            @include _515{
+                display: none;
+            }
+            p {
+                @extend .font-italic;
+                font-size: 10px;
+                line-height: 19px;
+                @include _991{
+                    display: none;
+                }
+            }
+        }
+    }
+}
